@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA Virtual Try-On</title>
+    <link rel="stylesheet" href="assets/app-BbiuYw5M.css">
+</head>
+<body>
+    <div class="vto-layout">
+        <!-- LEFT / MAIN AREA -->
+        <main class="vto-camera-area">
+            <div class="camera-prompt" id="permissionPrompt">
+                <button id="btnStartCamera" class="btn btn-primary">Start Camera</button>
+                <p class="camera-note">Allow camera access to view this garment live.</p>
+            </div>
+            <video id="videoElement" autoplay playsinline></video>
+            <img id="garmentOverlay" class="garment-overlay" src="" alt="AURA Garment Overlay">
+        </main>
+
+        <!-- RIGHT / CONTROL AREA -->
+        <aside class="vto-control-area">
+            <header class="vto-header">
+                <h1>AURA Virtual Try-On</h1>
+                <p class="vto-subtitle">See the look before you decide.</p>
+            </header>
+            
+            <div class="product-details" id="productInfo">
+                <h2 class="product-name" id="productName">Loading...</h2>
+                <p class="product-price" id="productPrice"></p>
+                
+                <div class="color-selection" id="colorSelection">
+                    <!-- Dynamically populated from Wix product data -->
+                </div>
+            </div>
+
+            <nav class="vto-actions">
+                <button id="btnFindFit" class="btn btn-secondary">Find Your Fit</button>
+                <button id="btnClose" class="btn btn-secondary">Return to Product</button>
+            </nav>
+        </aside>
+    </div>
+
+    <script src="assets/app-D5-tgFO2.js"></script>
+</body>
+</html>
